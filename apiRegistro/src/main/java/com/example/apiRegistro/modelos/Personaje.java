@@ -17,7 +17,8 @@ public class Personaje {
     private Integer poderDefensa;
     private String fotografia;
     private LocalDate fechaCreacion;
-
+    private String categoria;
+    private boolean sigueVivo;
     public Personaje() {
     }
 
@@ -29,6 +30,8 @@ public class Personaje {
         this.poderDefensa = poderDefensa;
         this.fotografia = fotografia;
         this.fechaCreacion = fechaCreacion;
+        this.categoria = categoria;
+        this.sigueVivo = sigueVivo;
     }
 
 
@@ -86,5 +89,21 @@ public class Personaje {
 
     public void setFechaCreacion(LocalDate fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public boolean isSigueVivo() {
+        return sigueVivo;
+    }
+
+    public void setSigueVivo(boolean sigueVivo) {
+        this.sigueVivo = sigueVivo;
     }
 }
